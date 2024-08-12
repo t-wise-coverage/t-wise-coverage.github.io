@@ -1,0 +1,31 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    width: 50px; /* Increased width for better readability */
+    height: 50px; /* Increased height for better readability */
+    border: 1px solid #000;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.light-grey {
+    background-color: lightgrey !important; /* Apply light grey color */
+}
