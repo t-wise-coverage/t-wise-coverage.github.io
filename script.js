@@ -172,13 +172,10 @@ function updateCellColors() {
         }
 
         if (has1) {
-            // cell.style.background = c1;
             selectedColors.push(c1);
         } if (has2) {
-            // cell.style.background = c2;
             selectedColors.push(c2);
         } if (has3_1) {
-            // cell.style.background = 'rgba(86,180,233,0.5)';
             selectedColors.push(c3);
         } if (has3_2) {
             if (!has3_1){
@@ -201,11 +198,9 @@ function updateCellColors() {
         } if (has7) {
             selectedColors.push(c7);
         } if (nothing) {
-            cell.style.background = ''; // No color
+            cell.style.background = '';
         }
 
-        // alert(selectedColors.join());
-        // alert(selectedColors.join(', '))
         if (selectedColors.length > 1) {
             let gradientStops = [];
             const step = 100 / (selectedColors.length);
