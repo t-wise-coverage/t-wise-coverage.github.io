@@ -60,6 +60,13 @@ body {
     width: 60%;
 }
 
+.popup .rp-btn {
+    background-color: #ffbe00;
+    color: white;
+    font-size: 12px;
+    width: 50%;
+}
+
 header {
     text-align: center;
     padding: 20px;

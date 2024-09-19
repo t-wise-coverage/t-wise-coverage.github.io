@@ -239,16 +239,17 @@ function closePopup() {
 }
 
 function redirectToLink() {
+    alert("This link does not exist yet");
+    // window.location.href = 'https://www.example.com';
+}
+
+function redirectToRP() {
     window.location.href = 'https://www.example.com';
 }
 
 function toggleInfoPanel() {
-    const panel = document.getElementById('infoPanel');
-    if (panel.classList.contains('open')) {
-        panel.classList.remove('open');
-    } else {
-        panel.classList.add('open');
-    }
+    document.getElementById('popupOverlay').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Re-enable scrolling
 }
 
 function updateInteractionCounter(){
