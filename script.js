@@ -244,7 +244,7 @@ function redirectToLink() {
 }
 
 function redirectToRP() {
-    window.location.href = 'https://www.example.com';
+    window.location.href = 'https://anonymous.4open.science/r/rp-evaluation-coverage-metrics-B76F/README.md';
 }
 
 function toggleInfoPanel() {
