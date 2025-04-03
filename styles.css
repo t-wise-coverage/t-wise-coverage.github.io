@@ -74,28 +74,30 @@ header {
 
 .container {
     display: flex;
-    height: 100vh; /* Full viewport height */
 }
 
 .left {
     flex: 60%;
     padding-left: 1em;
     padding-bottom: 1em;
+    font-size: 25px;
 }
 
 .right {
     flex: 40%;
-    padding: 20px;
+    margin-right: 10em;
     border: black;
     border-radius: 10px;
+    font-size: 25px;
 }
 
 #fm {
-    transform: scale(1); /* Adjust scale (1 means 100%, 0.5 is 50%, etc.) */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    transform: scale(1.2); /* Adjust scale (1 means 100%, 0.5 is 50%, etc.) */
     width: 100%;
     height: auto;
     max-width: 100%;
-    margin: auto;
 }
 
 table {
@@ -143,45 +145,6 @@ td {
     align-items: center;
 }
 
-.info-panel {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Hidden initially */
-    width: 300px;
-    height: 100%;
-    background-color: #f4f4f4;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    transition: right 0.3s ease, visibility 0s 0.3s; /* Keep hidden after animation */
-    visibility: hidden;
-    z-index: 1500;
-    padding: 20px;
-}
-
-.info-panel.open {
-    right: 0; /* Slide in */
-    visibility: visible;
-    transition: right 0.3s ease, visibility 0s; /* Remove delay when open */
-}
-
-.info-panel h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.info-panel p {
-    font-size: 16px;
-}
-
-.info-panel .close-panel-btn {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .navbar {
     margin: auto;
     text-align: center;
@@ -192,10 +155,6 @@ td {
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-#matrix {
-    font-size: 16px;
 }
 
 .checkbox-container {
@@ -232,10 +191,4 @@ td {
     border-radius: 25px;
     align-content: center;
     text-align: center;
-    margin-top: 3em;
-}
-
-#fm {
-    padding: 20px;
-    width: 92.5%;
 }
