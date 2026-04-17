@@ -3,9 +3,8 @@ function closePopup() {
     document.body.style.overflow = 'auto'; // Re-enable scrolling
 }
 
-function redirectToLink() {
-    alert("This link does not exist yet");
-    // window.location.href = 'https://www.example.com';
+function redirectToPaper() {
+    window.location.href = 'https://doi.org/10.1109/ICST62969.2025.10989003';
 }
 
 function redirectToRP() {
